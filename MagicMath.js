@@ -98,6 +98,13 @@ function equationDisplay() {
   }
 }
 
+function updateEquationDisplay(number) {
+  if(operatorSelected){
+    document.getElementById("equation").innerText += number;
+  } else {
+    document.getElementById("equation").innerText = number;
+  }
+}
 
 // Function to check if the game is over (changed by PNG)
 function checkGameOver() {
