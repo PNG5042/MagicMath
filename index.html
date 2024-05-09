@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Math</title>
+    <link rel="stylesheet" href="MagicMath.css">
+</head>
+
+<body>
+    <h1>Magic Math</h1>
+
+    <div id="mainArea">
+        <!-- 2x2 board for randomly generated numbers-->
+        <div id="Numbers">
+            <button class="button" id="button1">
+                <div id="number1"></div>
+            </button>
+            <button class="button" id="button2">
+                <div id="number2"></div>
+            </button>
+            <button class="button" id="button3">
+                <div id="number3"></div>
+            </button>
+            <button class="button" id="button4">
+                <div id="number4"></div>
+            </button>
+        </div>
+        
+        <div id="operators">
+            <button class="button" id="addition">+</button>
+            <button class="button" id="subtraction">-</button>
+            <button class="button" id="mulitplication">*</button>
+        </div>
+
+        <div id="box">
+            <center><span id="workspace">Workspace</span></center>
+            <!--include <equation> 
+            create a new child node to div-->
+            
+        </div>
+
+    </div>
+
+
+    <div id="score-board">
+        <h3>Goal: <span id="goalNumber">0</span></h3>
+        <p>Wins: <span id="Wins">0</span></p>
+        <p>Losses: <span id="Losses">0</span></p>
+    </div>
+    
+    <p id="turnInfo">TURN INFO</p>
+    <button id="newGameButton">New Game</button>
+    <script src="MagicMath.js"></script>
+</body>
+    
+<footer>
+    <p>&#169;<em>Christopher Harvey, Prathmesh Nitin Gite, Adison Daggett<br> CS290 ~ Oregon State University</em></p>
+</footer>
+</html>
